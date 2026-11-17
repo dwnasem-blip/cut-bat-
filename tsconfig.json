@@ -2,7 +2,11 @@
   "compilerOptions": {
     "target": "ES2020",
     "useDefineForClassFields": true,
-    "lib": ["ES2020", "DOM", "DOM.Iterable"],
+    "lib": [
+      "ES2020",
+      "DOM",
+      "DOM.Iterable"
+    ],
     "module": "ESNext",
     "skipLibCheck": true,
     "esModuleInterop": true,
@@ -24,25 +28,54 @@
     "allowJs": true,
     "baseUrl": "./",
     "paths": {
-      "@/*": ["src/*"],
-      "@/components": ["src/components"],
-      "@/features": ["src/features"],
-      "@/services": ["src/services"],
-      "@/store": ["src/store"],
-      "@/types": ["src/types"],
-      "@/utils": ["src/utils"],
-      "@/hooks": ["src/hooks"],
-      "@/locales": ["src/locales"],
-      "@/constants": ["src/constants"]
+      "@/*": [
+        "src/*"
+      ],
+      "@/components": [
+        "src/components"
+      ],
+      "@/features": [
+        "src/features"
+      ],
+      "@/services": [
+        "src/services"
+      ],
+      "@/store": [
+        "src/store"
+      ],
+      "@/types": [
+        "src/types"
+      ],
+      "@/utils": [
+        "src/utils"
+      ],
+      "@/hooks": [
+        "src/hooks"
+      ],
+      "@/locales": [
+        "src/locales"
+      ],
+      "@/constants": [
+        "src/constants"
+      ]
     },
     "jsx": "react-jsx",
-    "types": ["react-native"]
+    "types": [
+      "react-native"
+    ]
   },
-  "include": ["src", "app.json"],
-  "exclude": ["node_modules", "dist"],
+  "include": [
+    "src",
+    "app.json"
+  ],
+  "exclude": [
+    "node_modules",
+    "dist"
+  ],
   "ts-node": {
     "compilerOptions": {
       "module": "commonjs"
     }
-  }
+  },
+  "extends": "expo/tsconfig.base"
 }
