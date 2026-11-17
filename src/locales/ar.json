@@ -68,6 +68,37 @@
   "profile": {
     "title": "الملف الشخصي والإعدادات",
     "placeholder": "الإعدادات قادمة في المرحلة 3",
-    "userInfo": "معلومات المستخدم"
+    "userInfo": "معلومات المستخدم",
+    "logout": "تسجيل الخروج"
+  },
+  "projects": {
+    "title": "مشاريعي",
+    "newProject": "مشروع جديد",
+    "importVideo": "استيراد فيديو",
+    "selectVideo": "اختر فيديو",
+    "noVideos": "لا توجد مقاطع فيديو",
+    "createProject": "إنشاء مشروع",
+    "projectCreated": "تم إنشاء المشروع بنجاح",
+    "projectDeleted": "تم حذف المشروع"
+  },
+  "video": {
+    "title": "مشغل الفيديو",
+    "play": "تشغيل",
+    "pause": "إيقاف مؤقت",
+    "duration": "المدة",
+    "importPermissionDenied": "تم رفض إذن الوصول إلى مكتبة الوسائط"
+  },
+  "editor": {
+    "title": "محرر الخط الزمني",
+    "addTrack": "إضافة مسار",
+    "removeTrack": "إزالة مسار",
+    "play": "تشغيل",
+    "pause": "إيقاف",
+    "seek": "البحث",
+    "trim": "قص",
+    "move": "تحريك",
+    "export": "تصدير",
+    "undo": "تراجع",
+    "redo": "إعادة"
   }
 }

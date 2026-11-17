@@ -68,6 +68,37 @@
   "profile": {
     "title": "Profile & Settings",
     "placeholder": "Settings coming in Phase 3",
-    "userInfo": "User Information"
+    "userInfo": "User Information",
+    "logout": "Logout"
+  },
+  "projects": {
+    "title": "My Projects",
+    "newProject": "New Project",
+    "importVideo": "Import Video",
+    "selectVideo": "Select Video",
+    "noVideos": "No videos found",
+    "createProject": "Create Project",
+    "projectCreated": "Project created successfully",
+    "projectDeleted": "Project deleted"
+  },
+  "video": {
+    "title": "Video Player",
+    "play": "Play",
+    "pause": "Pause",
+    "duration": "Duration",
+    "importPermissionDenied": "Permission denied to access media library"
+  },
+  "editor": {
+    "title": "Timeline Editor",
+    "addTrack": "Add Track",
+    "removeTrack": "Remove Track",
+    "play": "Play",
+    "pause": "Pause",
+    "seek": "Seek",
+    "trim": "Trim",
+    "move": "Move",
+    "export": "Export",
+    "undo": "Undo",
+    "redo": "Redo"
   }
 }
