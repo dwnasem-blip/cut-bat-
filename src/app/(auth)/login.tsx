@@ -1,20 +1,25 @@
 import React from 'react';
-import { View, ScrollView, StyleSheet } from 'react-native';
+import { View, ScrollView, StyleSheet, Alert } from 'react-native';
 import { useRouter } from 'expo-router';
 import { SafeAreaWrapper } from '@/components/common/SafeAreaWrapper';
 import { Logo } from '@/components/common/Logo';
 import { LoginForm } from '@/components/auth/LoginForm';
 import { Colors } from '@/utils/colors';
 import { Spacing } from '@/utils/spacing';
+import { useAuthStore } from '@/store/authStore';
 
 export default function LoginScreen() {
   const router = useRouter();
+  const signIn = useAuthStore((state) => state.signIn);
 
   const handleLogin = async (data: any) => {
-    // TODO: Implement real login with Supabase in Phase 3
-    console.log('Login attempt:', data);
-    // For now, simulate successful login
-    router.replace('/(main)/home');
+    const success = await signIn(data.email, data.password);
+    if (success) {
+      router.replace('/(main)/home');
+    } else {
+      const error = useAuthStore.getState().error;
+      Alert.alert('Login Failed', error || 'Please check your credentials and try again');
+    }
   };
 
   const handleForgotPassword = () => {

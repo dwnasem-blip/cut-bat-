@@ -14,6 +14,10 @@ export const useAuth = () => {
     setLoading: authState.setLoading,
     setError: authState.setError,
     setIsAuthenticated: authState.setIsAuthenticated,
+    signUp: authState.signUp,
+    signIn: authState.signIn,
+    signOut: authState.signOut,
+    resetPassword: authState.resetPassword,
     logout: authState.logout,
   };
 };
