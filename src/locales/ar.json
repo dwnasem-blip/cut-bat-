@@ -1,0 +1,73 @@
+{
+  "app": {
+    "name": "كات بات ذكي",
+    "tagline": "رؤيتك. ذكاؤنا."
+  },
+  "auth": {
+    "login": "تسجيل الدخول",
+    "register": "إنشاء حساب",
+    "forgotPassword": "هل نسيت كلمة المرور؟",
+    "email": "البريد الإلكتروني",
+    "password": "كلمة المرور",
+    "confirmPassword": "تأكيد كلمة المرور",
+    "rememberMe": "تذكرني",
+    "dontHaveAccount": "ليس لديك حساب؟",
+    "haveAccount": "هل لديك حساب بالفعل؟",
+    "createOne": "أنشئ واحداً",
+    "acceptTerms": "أقبل الشروط والأحكام",
+    "loginButton": "تسجيل الدخول",
+    "registerButton": "إنشاء حساب",
+    "resetButton": "إرسال رابط إعادة تعيين",
+    "backToLogin": "العودة إلى تسجيل الدخول",
+    "resetSent": "تحقق من بريدك الإلكتروني لرابط إعادة تعيين كلمة المرور",
+    "loading": "جاري التحميل..."
+  },
+  "errors": {
+    "invalidEmail": "صيغة بريد إلكتروني غير صحيحة",
+    "passwordTooShort": "يجب أن تكون كلمة المرور 6 أحرف على الأقل",
+    "passwordTooShortComplex": "يجب أن تكون كلمة المرور 8 أحرف على الأقل",
+    "passwordNoUppercase": "يجب أن تتضمن كلمة المرور حرفاً كبيراً",
+    "passwordNoNumber": "يجب أن تتضمن كلمة المرور رقماً",
+    "passwordMismatch": "كلمات المرور غير متطابقة",
+    "termsRequired": "يجب أن تقبل الشروط",
+    "emailRequired": "البريد الإلكتروني مطلوب",
+    "passwordRequired": "كلمة المرور مطلوبة",
+    "confirmPasswordRequired": "يرجى تأكيد كلمة المرور"
+  },
+  "navigation": {
+    "home": "الرئيسية",
+    "aiStudio": "استوديو الذكاء الاصطناعي",
+    "editor": "المحرر",
+    "projects": "المشاريع",
+    "profile": "الملف الشخصي"
+  },
+  "home": {
+    "welcome": "مرحباً بك في كات بات ذكي",
+    "recentProjects": "المشاريع الأخيرة",
+    "noProjects": "لا توجد مشاريع حتى الآن",
+    "aiSuggestions": "اقتراحات الذكاء الاصطناعي",
+    "createNewProject": "إنشاء مشروع جديد"
+  },
+  "aiStudio": {
+    "title": "استوديو الذكاء الاصطناعي",
+    "aiDirector": "مخرج ذكي",
+    "textToVideo": "نص إلى فيديو",
+    "imageToVideo": "صورة إلى فيديو",
+    "voiceStudio": "استوديو الصوت",
+    "coming": "قريباً في المرحلة 5"
+  },
+  "editor": {
+    "title": "محرر احترافي",
+    "placeholder": "المحرر قادم في المرحلة 5"
+  },
+  "projects": {
+    "title": "مشاريعي",
+    "placeholder": "إدارة المشاريع قادمة في المرحلة 10",
+    "noProjects": "لا توجد مشاريع"
+  },
+  "profile": {
+    "title": "الملف الشخصي والإعدادات",
+    "placeholder": "الإعدادات قادمة في المرحلة 3",
+    "userInfo": "معلومات المستخدم"
+  }
+}

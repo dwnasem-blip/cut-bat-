@@ -1,0 +1,40 @@
+{
+  "expo": {
+    "name": "CUT BAT AI",
+    "slug": "cut-bat-ai",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./src/assets/images/icon.png",
+    "assetBundlePatterns": ["**/*"],
+    "splash": {
+      "image": "./src/assets/images/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#090D16"
+    },
+    "ios": {
+      "bundleIdentifier": "com.cutbatai.app",
+      "supportsTabletMode": false,
+      "requiresFullScreen": true,
+      "infoPlist": {
+        "NSLocalizedUsageDescriptionForMediaLibraryEnabled": "CUT BAT AI needs access to your photo library to import videos and images."
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./src/assets/images/adaptive-icon.png",
+        "backgroundColor": "#090D16"
+      }
+    },
+    "web": {
+      "bundler": "metro"
+    },
+    "plugins": [
+      "react-native-reanimated/plugin"
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "cutbat-ai"
+      }
+    }
+  }
+}

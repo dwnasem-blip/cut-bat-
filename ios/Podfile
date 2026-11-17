@@ -1,0 +1,28 @@
+# Podfile for CUT BAT AI
+# This file is prepared for future native iOS module integration in Phase 7
+
+platform :ios, '14.0'
+
+# Future native modules will be added here:
+# - AVFoundation (video processing)
+# - CoreMedia (media handling)
+# - VideoToolbox (video encoding/decoding)
+
+target 'CutBatAI' do
+  # Dependencies are managed by Expo
+end
+
+# Post-install hook for ensuring proper pod dependencies
+post_install do |installer|
+  installer.pods_project.targets.each do |target|
+    flutter_additional_ios_build_settings(target)
+    target.build_configurations.each do |config|
+      config.build_settings['GCC_PREPROCESSOR_DEFINITIONS'] ||= [
+        '$(inherited)',
+        'PERMISSION_CAMERA=1',
+        'PERMISSION_MICROPHONE=1',
+        'PERMISSION_PHOTO_LIBRARY=1',
+      ]
+    end
+  end
+end

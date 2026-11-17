@@ -1,0 +1,73 @@
+{
+  "app": {
+    "name": "CUT BAT AI",
+    "tagline": "Your Vision. Our Intelligence."
+  },
+  "auth": {
+    "login": "Login",
+    "register": "Create Account",
+    "forgotPassword": "Forgot Password?",
+    "email": "Email",
+    "password": "Password",
+    "confirmPassword": "Confirm Password",
+    "rememberMe": "Remember me",
+    "dontHaveAccount": "Don't have an account?",
+    "haveAccount": "Already have an account?",
+    "createOne": "Create one",
+    "acceptTerms": "I accept the terms and conditions",
+    "loginButton": "Sign In",
+    "registerButton": "Create Account",
+    "resetButton": "Send Reset Link",
+    "backToLogin": "Back to Login",
+    "resetSent": "Check your email for password reset link",
+    "loading": "Loading..."
+  },
+  "errors": {
+    "invalidEmail": "Invalid email format",
+    "passwordTooShort": "Password must be at least 6 characters",
+    "passwordTooShortComplex": "Password must be at least 8 characters",
+    "passwordNoUppercase": "Password must include uppercase letter",
+    "passwordNoNumber": "Password must include number",
+    "passwordMismatch": "Passwords do not match",
+    "termsRequired": "You must accept the terms",
+    "emailRequired": "Email is required",
+    "passwordRequired": "Password is required",
+    "confirmPasswordRequired": "Please confirm your password"
+  },
+  "navigation": {
+    "home": "Home",
+    "aiStudio": "AI Studio",
+    "editor": "Editor",
+    "projects": "Projects",
+    "profile": "Profile"
+  },
+  "home": {
+    "welcome": "Welcome to CUT BAT AI",
+    "recentProjects": "Recent Projects",
+    "noProjects": "No projects yet",
+    "aiSuggestions": "AI Suggestions",
+    "createNewProject": "Create New Project"
+  },
+  "aiStudio": {
+    "title": "AI Studio",
+    "aiDirector": "AI Director",
+    "textToVideo": "Text to Video",
+    "imageToVideo": "Image to Video",
+    "voiceStudio": "Voice Studio",
+    "coming": "Coming in Phase 5"
+  },
+  "editor": {
+    "title": "Professional Editor",
+    "placeholder": "Editor coming in Phase 5"
+  },
+  "projects": {
+    "title": "My Projects",
+    "placeholder": "Projects management coming in Phase 10",
+    "noProjects": "No projects yet"
+  },
+  "profile": {
+    "title": "Profile & Settings",
+    "placeholder": "Settings coming in Phase 3",
+    "userInfo": "User Information"
+  }
+}
