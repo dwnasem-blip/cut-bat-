@@ -1,0 +1,54 @@
+{
+  "cli": {
+    "version": ">= 16.0.1",
+    "appVersionSource": "remote"
+  },
+  "build": {
+    "development": {
+      "developmentClient": true,
+      "distribution": "internal",
+      "ios": {
+        "resourceClass": "m-medium"
+      },
+      "android": {
+        "resourceClass": "medium"
+      }
+    },
+    "preview": {
+      "ios": {
+        "resourceClass": "m-medium"
+      },
+      "android": {
+        "resourceClass": "medium"
+      }
+    },
+    "production": {
+      "autoIncrement": "version",
+      "ios": {
+        "resourceClass": "m-medium"
+      },
+      "android": {
+        "resourceClass": "medium",
+        "gradleCommand": ":app:bundleRelease"
+      }
+    }
+  },
+  "submit": {
+    "production": {
+      "ios": {
+        "ascAppId": "REPLACE_WITH_YOUR_APP_ID",
+        "appleId": "REPLACE_WITH_YOUR_APPLE_ID",
+        "appleTeamId": "REPLACE_WITH_YOUR_TEAM_ID",
+        "appIdentifier": "com.cutbatai.app"
+      },
+      "android": {
+        "serviceAccount": "REPLACE_WITH_PATH_TO_SERVICE_ACCOUNT_JSON",
+        "track": "internal",
+        "releaseStatus": "inProgress"
+      }
+    }
+  },
+  "updates": {
+    "url": "https://u.expo.dev/REPLACE_WITH_YOUR_PROJECT_ID"
+  }
+}

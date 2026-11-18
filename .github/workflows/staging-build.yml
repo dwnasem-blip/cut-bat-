@@ -1,0 +1,62 @@
+name: 🧪 Staging Build
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'src/**'
+      - 'app.json'
+      - 'package.json'
+      - '.github/workflows/staging-build.yml'
+
+concurrency:
+  group: staging-build
+  cancel-in-progress: true
+
+jobs:
+  build-staging:
+    name: 🧪 Build Staging Version
+    runs-on: ubuntu-latest
+    steps:
+      - name: 🛎️ Checkout code
+        uses: actions/checkout@v4
+
+      - name: 📦 Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 18
+          cache: npm
+
+      - name: 📥 Install dependencies
+        run: npm ci
+
+      - name: 🔐 Setup EAS CLI
+        run: |
+          npm install -g eas-cli@latest
+          eas login --non-interactive --username ${{ secrets.EAS_USERNAME }} --password ${{ secrets.EAS_PASSWORD }}
+
+      - name: 🏗️ Build iOS Staging
+        run: |
+          eas build -p ios --profile preview --wait --non-interactive
+        continue-on-error: true
+
+      - name: 🏗️ Build Android Staging
+        run: |
+          eas build -p android --profile preview --wait --non-interactive
+        continue-on-error: true
+
+      - name: 📡 Publish Staging Update
+        run: |
+          eas update \
+            --branch staging \
+            --message "Staging: $(git log -1 --pretty=%B)" \
+            --non-interactive
+
+      - name: 📊 Summary
+        run: |
+          echo "## 🧪 Staging Build Complete" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "Branch: staging" >> $GITHUB_STEP_SUMMARY
+          echo "Commit: ${{ github.sha }}" >> $GITHUB_STEP_SUMMARY
+          echo "To test: Run \`eas update --branch staging\` in Expo Go" >> $GITHUB_STEP_SUMMARY

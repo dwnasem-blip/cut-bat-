@@ -4,6 +4,9 @@
     "slug": "cut-bat-ai",
     "version": "1.0.0",
     "sdkVersion": "58.0.5",
+    "runtimeVersion": {
+      "policy": "sdkVersion"
+    },
     "orientation": "portrait",
     "assetBundlePatterns": ["**/*"],
     "ios": {
