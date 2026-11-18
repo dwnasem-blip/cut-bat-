@@ -61,7 +61,8 @@
     },
     "jsx": "react-jsx",
     "types": [
-      "react-native"
+      "react-native",
+      "node"
     ]
   },
   "include": [

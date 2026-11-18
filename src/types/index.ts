@@ -1,10 +1,10 @@
 export interface User {
   id: string;
   email: string;
-  name?: string;
+  name?: string | null;
   avatar?: string;
-  createdAt: string;
-  updatedAt: string;
+  createdAt?: string;
+  updatedAt?: string;
 }
 
 export interface Project {

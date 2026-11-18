@@ -1,6 +1,6 @@
 import React, { useRef, useState } from 'react';
 import { View, Text, TouchableOpacity, StyleSheet, Dimensions } from 'react-native';
-import { Video, AVPlaybackStatus } from 'expo-av';
+import { Video, AVPlaybackStatus, AVPlaybackStatusToSet } from 'expo-av';
 import { Ionicons } from '@expo/vector-icons';
 import { Colors } from '@/utils/colors';
 import { Spacing } from '@/utils/spacing';
@@ -111,7 +111,7 @@ export const VideoPlayer = ({ uri, onError }: VideoPlayerProps) => {
           rate={1.0}
           volume={1.0}
           isMuted={false}
-          resizeMode="contain"
+          resizeMode={undefined}
           shouldPlay={false}
           onPlaybackStatusUpdate={handlePlaybackStatusUpdate}
           onError={(error) => {

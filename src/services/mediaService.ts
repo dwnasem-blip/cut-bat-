@@ -118,7 +118,7 @@ export const mediaService = {
         return null;
       }
 
-      return { id: data?.[0]?.id || '' };
+      return { id: (data as any)?.[0]?.id || '' };
     } catch (err) {
       console.error('Save project error:', err);
       return null;
