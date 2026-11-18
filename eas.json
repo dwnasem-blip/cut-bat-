@@ -36,19 +36,19 @@
   "submit": {
     "production": {
       "ios": {
-        "ascAppId": "REPLACE_WITH_YOUR_APP_ID",
-        "appleId": "REPLACE_WITH_YOUR_APPLE_ID",
-        "appleTeamId": "REPLACE_WITH_YOUR_TEAM_ID",
+        "ascAppId": "",
+        "appleId": "",
+        "appleTeamId": "",
         "appIdentifier": "com.cutbatai.app"
       },
       "android": {
-        "serviceAccount": "REPLACE_WITH_PATH_TO_SERVICE_ACCOUNT_JSON",
+        "serviceAccount": "",
         "track": "internal",
         "releaseStatus": "inProgress"
       }
     }
   },
   "updates": {
-    "url": "https://u.expo.dev/REPLACE_WITH_YOUR_PROJECT_ID"
+    "url": ""
   }
 }

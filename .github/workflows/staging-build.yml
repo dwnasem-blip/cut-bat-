@@ -39,14 +39,21 @@ jobs:
       - name: 🏗️ Build iOS Staging
         run: |
           eas build -p ios --profile preview --wait --non-interactive
-        continue-on-error: true
+        id: build-ios
 
       - name: 🏗️ Build Android Staging
         run: |
           eas build -p android --profile preview --wait --non-interactive
-        continue-on-error: true
+        id: build-android
+
+      - name: ✅ Verify Builds Succeeded
+        if: failure()
+        run: |
+          echo "❌ Build failed. Stopping workflow."
+          exit 1
 
       - name: 📡 Publish Staging Update
+        if: success()
         run: |
           eas update \
             --branch staging \
